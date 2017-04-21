@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Life in Javascript</title>
+    <link rel="stylesheet" type ="text/css" href="css/game.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous">
+    </script>
+    <script src = "js/gameLogic.js"></script>
+</head>
+<body>
+    <h2>Game of Life in JavaScript</h2>
+    <p><strong>Rule 1: </strong>Any live cell with fewer than two live neighbors dies.  As if caused by under population.</p>
+    <p><strong>Rule 2: </strong>Any live cell with more than three live neighbors dies.  As if caused by overcrowding.</p>
+    <p><strong>Rule 3: </strong>Any live cell with two or three live neighbors lives on to the next generation.</p>
+    <p><strong>Rule 4: </strong>Any dead cell with exactly three live neighbors becomes a live cell.</p>
+
+    <table id="gameBoard"></table>
+
+    <button id="nextGen">Increment 1 Generation</button>
+    <button id="multiGen">Increment 23 Generation</button>
+    <br/>
+    <br/>
+    <button id="random">Random Population</button>
+    <br/>
+    <br/>
+    <span id="status" class="stopped">Stopped</span>
+    <br/>
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    <br/>
+    <br/>
+
+</body>
+</html>

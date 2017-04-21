@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, san-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #AEC6CF;
+}
+
+#gameBoard {
+    margin: 0 auto 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.row {
+    display: block;
+}
+
+.cell {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #999;
+    display: inline-block;
+    overflow: hidden;
+    background-color: white;
+}
+
+.cell[on='true'] {
+    background-color: #00BFA5;
+}
+
+#link {
+    text-align: center;
+    width: 375px;
+}
+
+#status {
+    color: green;
+}
+
+#status.stopped {
+    color: red;
+}
